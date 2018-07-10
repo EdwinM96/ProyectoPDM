@@ -1,4 +1,4 @@
-package com.example.javier.proyectopdm;
+package com.example.javier.proyectopdm.Activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import com.example.javier.proyectopdm.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_ver_carrito) {
             return true;
         }
 

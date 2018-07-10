@@ -11,7 +11,7 @@ import com.example.javier.proyectopdm.Modelos.Productos;
 import com.example.javier.proyectopdm.R;
 
 import java.util.List;
-
+//El adaptador producto nos ayuda a desplegar todos los productos existentes en el API
 public class Product_adapter extends RecyclerView.Adapter<Product_adapter.MyViewHolder>{
 
    private Context context;
@@ -41,6 +41,7 @@ public class Product_adapter extends RecyclerView.Adapter<Product_adapter.MyView
 @Override
 public int getItemCount () {return Productsdata.size();}
 
+//Clase que nos sirve para tener asociado el ViewHolder(la vista que ira enlistada, o cada item de la vista) con nuestro adaptador
 public static class MyViewHolder extends RecyclerView.ViewHolder {
     private TextView nombre;
 

@@ -26,7 +26,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class Productsfragment extends Fragment {
+public class FragmentExample extends Fragment {
 
     View view;
     private String url;
@@ -39,13 +39,13 @@ public class Productsfragment extends Fragment {
     private List<Productos> lista1 = null;
     private String nombre;
     private String imagen;
-    private float precio;
+    private String precio;
     private String categoria;
     private int id;
 
 
 
-    public Productsfragment(){
+    public FragmentExample(){
 
     }
 
@@ -109,18 +109,12 @@ public class Productsfragment extends Fragment {
                     imagen = lista1.get(i).getImagen();}
 
                     if(lista1.get(i).getPrecio() == null){
-                    precio = "Producto sin precio";
+                    precio = "0.0";
                     }
                     else{
                     precio = lista1.get(i).getPrecio();}
 
-                    listproduct.add(
-                            new Productos(nombre
-                            ,categoria
-                            ,imagen
-                            ,precio
-                            ,lista1.get(i).getId()
-                            ,lista1.get(i).get__v()));
+                    listproduct.add(new Productos(nombre,categoria,imagen,precio,lista1.get(i).getId(),lista1.get(i).get__v()));
                 }
 
                     recyclerView = (RecyclerView) view2.findViewById(R.id.product_recyclerview);

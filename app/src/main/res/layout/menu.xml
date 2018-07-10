@@ -8,7 +8,7 @@
     >
 
 
-    <TextView
+    <Button
         android:textSize="35sp"
         android:layout_marginTop="40dp"
         android:textColor="#848484"
@@ -16,10 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Productos"
-        android:background="@color/colorPrimary"
+        android:id="@+id/btn_productos"
         />
 
-    <TextView
+    <Button
         android:textSize="35sp"
         android:layout_marginTop="60dp"
         android:textColor="#848484"
@@ -27,16 +27,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Clientes"
-        android:background="@color/colorPrimary"
+        android:id="@+id/btn_clientes"
         />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:background="@color/colorPrimary"
-        android:text="Facturas"
+        android:id="@+id/btn_facturas"
+        android:text="Pedidos"
         android:textColor="#848484"
         android:textSize="35sp" />
 

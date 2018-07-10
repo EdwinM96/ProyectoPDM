@@ -1,10 +1,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.javier.proyectopdm.MainActivity">
+    tools:context="com.example.javier.proyectopdm.Activities.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_ver_carrito"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Ver Carrito"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_elim_carrito"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Eliminar Carrito"/>
 </menu>
